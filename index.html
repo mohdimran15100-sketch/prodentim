@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ProDentim Oral Probiotic: Ingredients, Benefits &amp; Price Guide</title>
-<meta name="description" content="Read an evidence-aware ProDentim guide for U.S. shoppers covering ingredients, potential benefits, price and package options, reviews, oral-probiotic research and what the formula does not claim.">
+<title>ProDentim — 3.5 Billion CFU Oral Probiotic for Teeth, Gums &amp; Fresh Breath</title>
+<meta name="description" content="ProDentim is a soft, dissolving oral probiotic tablet with 3.5 billion CFU, including L. paracasei, B. lactis BL-04, and L. reuteri, formulated to support the oral microbiome, gum comfort, and fresh breath.">
 <link rel="canonical" href="https://priodentim.com/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="ProDentim Editorial Team">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ProDentim">
-<meta property="og:title" content="ProDentim Oral Probiotic Supplement | Teeth, Gum &amp; Fresh Breath Support">
+<meta property="og:title" content="ProDentim — 3.5 Billion CFU Oral Probiotic for Teeth, Gums &amp; Fresh breathe">
 <meta property="og:description" content="A daily chewable oral probiotic with studied bacterial strains, inulin and tricalcium phosphate  -  formulated to support teeth, gums, fresh breath and oral microbiome balance.">
 <meta property="og:url" content="https://priodentim.com/">
 <meta property="og:image" content="https://priodentim.com/assets/images/prodentim-bottle-oral-probiotic-supplement.png">
@@ -19,7 +19,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ProDentim Oral Probiotic Supplement | Teeth, Gum &amp; Fresh Breath Support">
-<meta name="twitter:description" content="A daily chewable oral probiotic formulated to support teeth, gums, fresh breath and oral microbiome balance  -  alongside brushing and flossing, not instead of them.">
+<meta name="twitter:description" content="A daily chewable oral probiotic formulated to support teeth, gums, fresh breath and oral microbiome balance - alongside brushing and flossing, not instead of them.">
 <meta name="twitter:image" content="https://priodentim.com/assets/images/prodentim-bottle-oral-probiotic-supplement.png">
 <link rel="icon" href="assets/images/prodentim-bottle-oral-probiotic-supplement.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -487,56 +487,557 @@
     </div>
   </section>
 
-  <!-- INGREDIENTS -->
-  <section class="band band-pale" id="ingredients">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>What's actually in the tablet</h2>
-        <p>Every strain and compound is named on the label. Below, each ingredient is paired with published research on that ingredient or strain category  -  not a clinical trial of the finished ProDentim tablet. That distinction matters, and we explain why directly beneath the grid.</p>
+  <style>
+/* =========================================================
+   PRODENTIM — INGREDIENTS + REVIEWS
+   Single copy-paste section
+========================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --panel: #ffffff;
+  --line: #e4e9e7;
+  --accent: #2e8b82;
+  --accent-soft: #eef8f6;
+  --accent-deep: #236c65;
+  --ink: #172321;
+  --ink-accent-deep: #15564f;
+  --ink-faint: #71807d;
+  --radius-m: 18px;
+}
+
+/* ---------- INGREDIENTS ---------- */
+
+#ingredients {
+  background: #f5f9f8;
+  padding: 70px 20px;
+  font-family: Arial, sans-serif;
+}
+
+#ingredients .wrap,
+#reviews .wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-head {
+  max-width: 850px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.section-head .kicker {
+  display: inline-block;
+  color: var(--accent-deep);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+
+.section-head h2 {
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  margin: 0 0 14px;
+  font-weight: 800;
+}
+
+.section-head p {
+  color: var(--ink-faint);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+/* Ingredient grid */
+
+.ing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ing-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.ing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 40px -26px rgba(23, 23, 23, .45);
+  border-color: rgba(46, 139, 130, .35);
+}
+
+.ing-photo {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ing-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* Changed from cover to contain to prevent image cropping */
+  object-fit: contain; 
+  /* Added padding so the image doesn't touch the edges */
+  padding: 25px; 
+  transition: transform .45s ease;
+}
+
+.ing-card:hover .ing-photo img {
+  transform: scale(1.08);
+}
+
+.ing-cfu {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--ink);
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .3);
+}
+
+.ing-body {
+  padding: 18px 18px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ing-body h3 {
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 7px;
+  font-weight: 800;
+}
+
+.ing-body p {
+  color: var(--ink-faint);
+  font-size: .88rem;
+  line-height: 1.6;
+  margin: 0 0 14px;
+  flex: 1;
+}
+
+.ing-body a {
+  display: inline-block;
+  width: max-content;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+  transition: .2s ease;
+}
+
+.ing-body a:hover {
+  color: var(--ink-accent-deep);
+  border-color: var(--ink-accent-deep);
+}
+
+/* Ingredient disclaimer */
+
+.callout-box {
+  background: #fff;
+  border: 1px solid #dce8e5;
+  border-left: 4px solid var(--accent);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 30px -25px rgba(0, 0, 0, .25);
+  margin-top: 32px;
+}
+
+.callout-box p {
+  color: #61706d;
+  font-size: .88rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.callout-box strong {
+  color: var(--ink);
+}
+
+/* ---------- REVIEWS ---------- */
+
+#reviews {
+  background: #ffffff;
+  padding: 70px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 35px -30px rgba(0, 0, 0, .4);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -28px rgba(0, 0, 0, .4);
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  flex: none;
+}
+
+.avatar.a1 { background: #2E6F6A; }
+.avatar.a2 { background: #8A4B6B; }
+.avatar.a3 { background: #4A5A8A; }
+
+.review-who {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-who .name {
+  font-weight: 700;
+  font-size: .94rem;
+  color: var(--ink);
+}
+
+.review-who .loc {
+  font-size: .8rem;
+  color: var(--ink-faint);
+  margin-top: 2px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.stars svg {
+  width: 16px;
+  height: 16px;
+  color: #D9A441;
+}
+
+.verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .74rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+  padding: 4px 9px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.verified svg {
+  width: 12px;
+  height: 12px;
+}
+
+.review-card p.quote {
+  color: var(--ink);
+  font-size: .95rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+}
+
+.review-note {
+  font-size: .85rem;
+  line-height: 1.65;
+  color: var(--ink-faint);
+  margin: 28px auto 0;
+  max-width: 850px;
+  text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media(max-width: 1040px) {
+  .ing-grid { grid-template-columns: repeat(2, 1fr); }
+  .review-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 700px) {
+  #ingredients, #reviews { padding: 50px 15px; }
+  .section-head { margin-bottom: 28px; }
+  .section-head h2 { font-size: 2rem; }
+  .section-head p { font-size: .92rem; }
+  .ing-grid { grid-template-columns: 1fr; gap: 18px; }
+  .review-grid { grid-template-columns: 1fr; gap: 18px; }
+  .ing-body { padding: 17px 17px 19px; }
+  .review-card { padding: 22px 20px; }
+}
+
+@media(max-width: 380px) {
+  .section-head h2 { font-size: 1.75rem; }
+  .ing-body h3 { font-size: 1rem; }
+  .ing-body p, .review-card p.quote { font-size: .86rem; }
+}
+</style>
+
+<!-- ======================================================
+     INGREDIENTS
+====================================================== -->
+<section id="ingredients">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Inside the formula</span>
+      <h2>What's actually in the tablet</h2>
+      <p>Every strain and compound is named on the label. Below, each ingredient is paired with published research on that ingredient or strain category — not a clinical trial of the finished ProDentim tablet.</p>
+    </div>
+
+    <div class="ing-grid">
+      <!-- 1 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Probiotic strain</span>
+          <img src="assets/images/prodentim-ingredient-lactobacillus-paracasei.png" alt="Lactobacillus paracasei probiotic ingredient" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Lactobacillus paracasei</h3>
+          <p>A studied probiotic strain included for a possible supportive role in gum comfort and oral microbiome balance.</p>
+          <a href="#ref-1">See the research →</a>
+        </div>
       </div>
-      <div class="ing-grid">
-        <div class="ing-cell">
-          <span class="cfu-tag">~3.5 BILLION CFU</span><br>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="9" r="2.2"/><circle cx="16" cy="8" r="1.8"/><circle cx="14" cy="16" r="2.4"/><circle cx="7" cy="16" r="1.6"/><path d="M9.6 10 13.6 15M9.6 8.6l5.4-.8"/></svg>
-          <h3>Probiotic Blend</h3>
-          <p><em>L. paracasei</em>, <em>L. reuteri</em> and <em>S. salivarius</em>  -  three strains studied for a possible supportive role in gum comfort, plaque balance and breath freshness.</p>
-          <a href="#ref-1">See the research  -> </a>
+
+      <!-- 2 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Probiotic strain</span>
+          <img src="assets/images/prodentim-ingredient-bifidobacterium-lactis-bl04.png" alt="Bifidobacterium lactis BL-04 probiotic ingredient" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
         </div>
-        <div class="ing-cell">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21c4-3 7-6.5 7-10.5A7 7 0 0 0 12 3a7 7 0 0 0-7 7.5C5 14.5 8 18 12 21z"/><path d="M12 21V9"/></svg>
-          <h3>Inulin (Prebiotic Fiber)</h3>
-          <p>A plant fiber that feeds beneficial bacteria so they can establish themselves and compete with less helpful strains.</p>
-          <a href="#ref-9">See the research  -> </a>
-        </div>
-        <div class="ing-cell">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 3h6l1 5-4 13-4-13z"/><path d="M9 8h6"/></svg>
-          <h3>Tricalcium Phosphate</h3>
-          <p>A calcium-and-phosphate mineral compound studied for its ability to help remineralize early, softened spots on tooth enamel.</p>
-          <a href="#ref-4">See the research  -> </a>
-        </div>
-        <div class="ing-cell">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/><path d="M9.5 15.5c0 1.4 1.1 2.5 2.5 2.5"/></svg>
-          <h3>Peppermint</h3>
-          <p>Contributes the flavor, and lab studies have found peppermint oil inhibits several bacteria strains implicated in plaque and oral odor.</p>
-          <a href="#ref-5">See the research  -> </a>
-        </div>
-        <div class="ing-cell">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9 12h6M12 9v6"/></svg>
-          <h3>Malic Acid</h3>
-          <p>The compound naturally found in strawberries, included at a food-grade level and traditionally associated with a brighter-feeling smile. This is a flavor and tradition-based inclusion, not a clinically studied whitening claim.</p>
-        </div>
-        <div class="ing-cell">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M8 16h5M8 8h8"/></svg>
-          <h3>Third-party verified</h3>
-          <p>Made in a GMP-certified, FDA-registered facility, with every batch tested for purity before it ships. No proprietary blend hiding individual amounts.</p>
+        <div class="ing-body">
+          <h3>Bifidobacterium lactis BL-04</h3>
+          <p>A probiotic strain studied in connection with immune and microbiome support, included as part of the probiotic blend.</p>
+          <a href="#ref-9">See the research →</a>
         </div>
       </div>
-      <div class="callout-box" style="margin-top:32px;">
-        <p><strong>Product-specific claims vs. general scientific evidence:</strong> the studies linked throughout this page investigated individual bacterial strains or compounds  -  in many cases the exact strains ProDentim uses, but tested as standalone ingredients in independent research, not as the finished ProDentim formula. Research on a strain category is informative context, not proof that this specific product produces the same results. We separate the two deliberately so you can judge the evidence on its own terms.</p>
+
+      <!-- 3 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">~3.5B CFU total</span>
+          <img src="assets/images/prodentim-ingredient-lactobacillus-reuteri.png" alt="Lactobacillus reuteri probiotic ingredient" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Lactobacillus reuteri</h3>
+          <p>A probiotic strain researchers have studied alongside professional cleaning and daily oral hygiene.</p>
+          <a href="#ref-2">See the research →</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Prebiotic fiber</span>
+          <img src="assets/images/prodentim-ingredient-inulin-chicory-root.png" alt="Inulin from chicory root" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Inulin (chicory root)</h3>
+          <p>A plant-based prebiotic fiber that can provide nourishment for beneficial bacteria in the gut and microbiome.</p>
+          <a href="#ref-9">See the research →</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Flavor &amp; tradition</span>
+          <img src="assets/images/prodentim-ingredient-malic-acid-strawberry.png" alt="Strawberry-derived malic acid" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Malic acid (strawberry)</h3>
+          <p>Naturally found in strawberries and included at a food-grade level as part of the formula.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Mineral compound</span>
+          <img src="assets/images/prodentim-ingredient-tricalcium-phosphate.png" alt="Tricalcium phosphate mineral ingredient" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Tricalcium phosphate</h3>
+          <p>A calcium-and-phosphate mineral compound commonly used in oral-care and dental-material research.</p>
+          <a href="#ref-4">See the research →</a>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="ing-card">
+        <div class="ing-photo">
+          <span class="ing-cfu">Flavor</span>
+          <img src="assets/images/prodentim-ingredient-peppermint-spearmint.png" alt="Peppermint and spearmint leaves" loading="lazy" width="418" height="418" onerror="this.src='https://placehold.co/418x418/eef8f6/2e8b82?text=Image+Missing'">
+        </div>
+        <div class="ing-body">
+          <h3>Peppermint &amp; spearmint</h3>
+          <p>Provides the refreshing mint flavor. Peppermint and mint compounds have also been investigated in laboratory oral-care research.</p>
+          <a href="#ref-5">See the research →</a>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="ing-card">
+        <div class="ing-photo" style="background: var(--panel);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:38%; height:38%; color:var(--accent-deep);" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="3"/>
+            <path d="M8 12h8"/>
+            <path d="M8 16h5"/>
+            <path d="M8 8h8"/>
+          </svg>
+        </div>
+        <div class="ing-body">
+          <h3>Quality &amp; manufacturing</h3>
+          <p>Review the product label and manufacturer information for current details regarding manufacturing, testing, ingredients and quality standards.</p>
+        </div>
       </div>
     </div>
-  </section>
 
+    <!-- Disclaimer -->
+    <div class="callout-box">
+      <p><strong>Product-specific claims vs. general scientific evidence:</strong> Research on an individual ingredient or probiotic strain provides scientific context, but it does not by itself prove that the finished ProDentim formula produces the same results. Individual experiences may vary.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     REVIEWS
+====================================================== -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Customer reviews</span>
+      <h2>What people are saying</h2>
+      <p>Individual experiences vary. Customer reviews are self-reported feedback and should not be interpreted as clinical evidence or a guarantee of results.</p>
+    </div>
+
+    <div class="review-grid">
+      <!-- REVIEW 1 -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a1">SP</div>
+          <div class="review-who">
+            <span class="name">Sam P.</span>
+            <span class="loc">Dallas, USA</span>
+          </div>
+        </div>
+        <div class="stars" aria-label="4 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+        </div>
+        <span class="verified">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+          Customer feedback
+        </span>
+        <p class="quote">"Even though I've always taken care of my teeth, something still felt missing. After adding ProDentim to my routine, my mouth feels noticeably cleaner and more comfortable."</p>
+      </div>
+
+      <!-- REVIEW 2 -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a2">PT</div>
+          <div class="review-who">
+            <span class="name">Portia T.</span>
+            <span class="loc">Florida, USA</span>
+          </div>
+        </div>
+        <div class="stars" aria-label="4 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+        </div>
+        <span class="verified">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+          Customer feedback
+        </span>
+        <p class="quote">"I'm honestly impressed with how fresh my mouth feels throughout the day. ProDentim fits easily into my routine, and I feel more confident about my daily oral-care routine."</p>
+      </div>
+
+      <!-- REVIEW 3 -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a3">TF</div>
+          <div class="review-who">
+            <span class="name">Theo F.</span>
+            <span class="loc">Chicago, USA</span>
+          </div>
+        </div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.2 20l1.1-6.5L2.5 8.9l6.6-.9z"/></svg>
+        </div>
+        <span class="verified">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+          Customer feedback
+        </span>
+        <p class="quote">"My gums feel calmer, and my overall oral hygiene feels more balanced. I like that ProDentim focuses on supporting an everyday oral-care routine."</p>
+      </div>
+    </div>
+
+    <p class="review-note">
+      Reviews reflect individual, self-reported customer experiences and are not a guarantee of results. Individual response can vary. Always follow the product label and speak with a qualified healthcare professional when appropriate.
+    </p>
+  </div>
+</section>
   <!-- BENEFITS -->
   <section class="band band-panel" id="benefits">
     <div class="wrap">
