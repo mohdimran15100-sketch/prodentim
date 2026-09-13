@@ -487,130 +487,180 @@
     </div>
   </section>
 ```html
+```html
 <!-- REVIEWS -->
 <section class="band band-pale" id="reviews">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-head">
-<span class="kicker">Customer Reviews</span>
-<h2>What People Are Saying</h2>
-<p>Individual experiences vary. Customer reviews are self-reported and are not a guarantee of results.</p>
-</div>
+    <div class="section-head">
+      <span class="kicker">Customer Reviews</span>
+      <h2>What People Are Saying</h2>
+      <p>
+        Individual experiences vary. Customer reviews are self-reported and are
+        not a guarantee of results.
+      </p>
+    </div>
 
-<div class="review-grid">
+    <div class="review-grid">
 
-<div class="review-card">
-<div class="review-top">
-<img class="avatar-img" src="assets/images/review-man-usa.webp"
-alt="Illustrative male customer from the USA" loading="lazy">
-<div class="review-who">
-<b>Sam P.</b>
-<span>Dallas, USA</span>
-</div>
-</div>
-<div class="stars">★★★★</div>
-<span class="verified">✓ Customer review</span>
-<p class="quote">"Even though I've always taken care of my teeth, something still felt missing. After adding ProDentim to my routine, my mouth feels noticeably cleaner and more comfortable."</p>
-</div>
+      <!-- USA -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a1">SP</div>
 
-<div class="review-card">
-<div class="review-top">
-<img class="avatar-img" src="assets/images/review-woman-canada.webp"
-alt="Illustrative female customer from Canada" loading="lazy">
-<div class="review-who">
-<b>Portia T.</b>
-<span>Canada</span>
-</div>
-</div>
-<div class="stars">★★★★</div>
-<span class="verified">✓ Customer review</span>
-<p class="quote">"I'm honestly impressed with how fresh my mouth feels throughout the day. ProDentim fits easily into my routine, and I feel much more confident about my breath now."</p>
-</div>
+          <div class="review-who">
+            <b>Sam P.</b>
+            <span>Dallas, USA</span>
+          </div>
+        </div>
 
-<div class="review-card">
-<div class="review-top">
-<img class="avatar-img" src="assets/images/review-man-uk.webp"
-alt="Illustrative male customer from the UK" loading="lazy">
-<div class="review-who">
-<b>Theo F.</b>
-<span>United Kingdom</span>
-</div>
-</div>
-<div class="stars">★★★★★</div>
-<span class="verified">✓ Customer review</span>
-<p class="quote">"My gums feel calmer, and my overall oral hygiene feels more balanced. I like that ProDentim focuses on supporting oral health naturally."</p>
-</div>
+        <div class="stars" aria-label="4 out of 5 stars">★★★★</div>
 
-</div>
+        <span class="verified">✓ Customer review</span>
 
-<p class="review-note">
-Reviews reflect individual experiences and are not a guarantee of results.
-Images are illustrative unless otherwise stated.
-</p>
+        <p class="quote">
+          "Even though I've always taken care of my teeth, something still felt
+          missing. After adding ProDentim to my routine, my mouth feels noticeably
+          cleaner and more comfortable."
+        </p>
+      </div>
 
-</div>
+
+      <!-- CANADA -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a2">PT</div>
+
+          <div class="review-who">
+            <b>Portia T.</b>
+            <span>Canada</span>
+          </div>
+        </div>
+
+        <div class="stars" aria-label="4 out of 5 stars">★★★★</div>
+
+        <span class="verified">✓ Customer review</span>
+
+        <p class="quote">
+          "I'm honestly impressed with how fresh my mouth feels throughout the day.
+          ProDentim fits easily into my routine, and I feel much more confident
+          about my breath now."
+        </p>
+      </div>
+
+
+      <!-- UK -->
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a3">TF</div>
+
+          <div class="review-who">
+            <b>Theo F.</b>
+            <span>United Kingdom</span>
+          </div>
+        </div>
+
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+
+        <span class="verified">✓ Customer review</span>
+
+        <p class="quote">
+          "My gums feel calmer, and my overall oral hygiene feels more balanced.
+          I like that ProDentim focuses on supporting oral health naturally."
+        </p>
+      </div>
+
+    </div>
+
+    <p class="review-note">
+      Reviews reflect individual experiences and are not a guarantee of results.
+    </p>
+
+  </div>
 </section>
+
 
 <style>
 #reviews .review-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
 }
+
 #reviews .review-card{
-background:#fff;
-padding:24px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+  background:#fff;
+  padding:24px;
+  border-radius:18px;
+  border:1px solid #e5edf8;
+  box-shadow:0 10px 30px rgba(15,40,75,.08);
 }
+
 #reviews .review-top{
-display:flex;
-align-items:center;
-gap:12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
-#reviews .avatar-img{
-width:60px;
-height:60px;
-border-radius:50%;
-object-fit:cover;
+
+#reviews .avatar{
+  width:58px;
+  height:58px;
+  min-width:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#1769e0,#0b4fb3);
+  color:#fff;
+  font-weight:800;
+  font-size:16px;
 }
+
 #reviews .review-who{
-display:flex;
-flex-direction:column;
-gap:3px;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
 }
+
 #reviews .review-who b{
-color:#14243a;
-font-size:16px;
+  color:#14243a;
+  font-size:16px;
 }
+
 #reviews .review-who span{
-color:#718096;
-font-size:13px;
+  color:#718096;
+  font-size:13px;
 }
+
 #reviews .stars{
-color:#1769e0;
-font-size:20px;
-letter-spacing:2px;
-margin:14px 0 5px;
+  color:#1769e0;
+  font-size:20px;
+  letter-spacing:2px;
+  margin:14px 0 5px;
 }
+
 #reviews .verified{
-color:#1769e0;
-font-size:12px;
-font-weight:700;
+  color:#1769e0;
+  font-size:12px;
+  font-weight:700;
 }
+
 #reviews .quote{
-color:#34465b;
-line-height:1.7;
+  color:#34465b;
+  line-height:1.7;
+  margin-bottom:0;
 }
+
 #reviews .review-note{
-font-size:13px;
-color:#68788c;
-margin-top:25px;
+  margin-top:25px;
+  color:#68788c;
+  font-size:13px;
+  line-height:1.6;
 }
+
 @media(max-width:800px){
-#reviews .review-grid{
-grid-template-columns:1fr;
-}
+  #reviews .review-grid{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 ```
