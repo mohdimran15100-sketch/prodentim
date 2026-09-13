@@ -1,0 +1,103 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-ivory: #FAFAF8;
+  --color-porcelain: #F7F7F5;
+  --color-surface: #F3F3F1;
+  --color-border: #E8E8E5;
+  --color-border-light: #F0F0ED;
+  --color-text: #171717;
+  --color-text-secondary: #4A4A47;
+  --color-text-muted: #777773;
+  --color-brand: #FFFFFF;
+  --color-brand-dark: #FFFFFF;
+  --color-brand-soft: #F7F7F5;
+  --color-accent: #FFFFFF;
+  --color-accent-soft: #FAFAF8;
+  --color-success: #FFFFFF;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.07);
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Work Sans", "Segoe UI", sans-serif;
+}
+
+html { background: var(--color-white); scroll-behavior: smooth; overflow-x: hidden; }
+body { background: var(--color-white) !important; color: var(--color-text) !important; overflow-x: hidden; }
+header, nav, main, section, footer { background: var(--color-white) !important; }
+section:nth-of-type(even), .band-pale, .band-contrast { background: var(--color-ivory) !important; color: var(--color-text) !important; }
+*, *::before, *::after { border-radius: 0; }
+img { background: transparent !important; max-width: 100%; height: auto; }
+.art-glow, .leaf { display: none !important; }
+h1, h2, h3, h4, h5, h6 { color: var(--color-text) !important; }
+p, li, td, th { color: var(--color-text-secondary) !important; }
+small, .muted, .secondary, .meta, .updated, .plan-days, .plan-name, .price-note { color: var(--color-text-muted) !important; }
+a { color: var(--color-text) !important; }
+a:hover { color: var(--color-text-secondary) !important; }
+
+.wrap, .nav-inner, .footer-grid, .disclaimer { max-width: 1200px; }
+.band { padding: clamp(64px, 9vw, 112px) 0; }
+.hero { padding: clamp(56px, 8vw, 104px) 0 64px; }
+.hero-grid { gap: clamp(32px, 6vw, 84px); }
+.kicker, .section-head .kicker, .legal-hero .kicker { color: var(--color-text-muted) !important; letter-spacing: .12em; }
+
+header.site { background: rgba(255, 255, 255, .94) !important; border-bottom: 1px solid var(--color-border) !important; backdrop-filter: blur(14px); }
+.brand, .brand .mark { color: var(--color-text) !important; }
+.brand .mark em { color: var(--color-text) !important; }
+nav.links a { color: var(--color-text-secondary) !important; }
+nav.links a:hover { color: var(--color-text) !important; }
+
+.btn, button, a[class*="button"], a[class*="btn"], .cta { background: var(--color-text) !important; color: var(--color-white) !important; border: 1px solid var(--color-text) !important; border-radius: 2px !important; box-shadow: none !important; transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease; }
+.btn:hover, button:hover, a[class*="button"]:hover, a[class*="btn"]:hover, .cta:hover { background: #333333 !important; color: var(--color-white) !important; transform: translateY(-1px); }
+.btn-ghost { background: var(--color-white) !important; color: var(--color-text) !important; border-color: var(--color-text) !important; }
+.btn-ghost:hover { background: var(--color-porcelain) !important; color: var(--color-text) !important; }
+.btn-block { width: 100%; }
+
+.card, .feature-card, .ingredient-card, .review-card, .faq-item, .pricing-card, .package-card, .price-card, .who-card, .callout-box, .contact-card, .bonus-card, .consider { background: var(--color-white) !important; border: 1px solid var(--color-border) !important; box-shadow: var(--shadow-card) !important; }
+.band-contrast .section-head p, .band-contrast p, .band-contrast .meta, .band-contrast li { color: var(--color-text-secondary) !important; }
+.band-contrast h2, .band-contrast h3, .band-contrast h4, .band-contrast a { color: var(--color-text) !important; }
+.band-contrast { border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+
+.ing-grid { background: var(--color-border) !important; border-color: var(--color-border) !important; border-radius: 2px !important; }
+.ing-cell { background: var(--color-white) !important; min-width: 0; min-height: 236px; }
+.ing-cell svg, .trust-item svg, .step .num, .ref-list .idx { color: var(--color-text) !important; }
+.pillar .tag, .save-badge, .cfu-tag, .b-tag, .ribbon { background: var(--color-surface) !important; color: var(--color-text) !important; border: 1px solid var(--color-border) !important; }
+.price-card.featured { background: var(--color-ivory) !important; border: 2px solid var(--color-text) !important; box-shadow: var(--shadow-card) !important; }
+.price-card { border-radius: 2px !important; min-width: 0; min-height: 100%; }
+.plan-bottles { height: 150px !important; padding: 10px 0; }
+.plan-bottles img { max-width: 100%; max-height: 130px; object-fit: contain; }
+.price-card ul { min-height: 112px; }
+.price-card .btn-primary, .price-card .btn-ghost { background: var(--color-text) !important; color: var(--color-white) !important; }
+
+.faq details, .faq-item { border-color: var(--color-border) !important; background: var(--color-white) !important; }
+.faq summary, .faq summary .chev { color: var(--color-text) !important; }
+.faq summary:focus-visible, a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible { outline: 3px solid var(--color-text) !important; outline-offset: 3px; }
+
+.compare, table.compare { background: var(--color-white) !important; border-color: var(--color-border) !important; }
+table.compare th { background: var(--color-surface) !important; color: var(--color-text) !important; }
+table.compare td, table.compare th { border-color: var(--color-border) !important; }
+.callout-box.warn, .legal-body .callout { background: var(--color-porcelain) !important; border-color: var(--color-border) !important; }
+
+footer { background: var(--color-white) !important; color: var(--color-text-secondary) !important; border-top: 1px solid var(--color-border) !important; }
+footer a, footer .footer-brand .mark, footer h5 { color: var(--color-text) !important; }
+footer p, footer li, footer .disclaimer, footer .foot-bottom { color: var(--color-text-muted) !important; }
+.disclaimer { border-color: var(--color-border) !important; }
+
+@media (max-width: 980px) {
+  .nav-inner { padding-left: 20px; padding-right: 20px; }
+  nav.links { background: var(--color-white) !important; border-color: var(--color-border) !important; transition: none !important; }
+  #nav-toggle:checked ~ .nav-inner nav.links { opacity: 1 !important; transform: translateY(0) !important; pointer-events: auto !important; }
+  html body header.site #nav-toggle:checked ~ .nav-inner nav.links { opacity: 1 !important; transform: translateY(0) !important; pointer-events: auto !important; }
+  .nav-cta .btn { display: none; }
+}
+@media (max-width: 640px) {
+  .wrap { padding-left: 20px; padding-right: 20px; }
+  .hero-cta-row, .trust-row { align-items: stretch; }
+  .hero-cta-row .btn { width: 100%; justify-content: center; }
+  .section-head { margin-bottom: 30px; }
+  .pricing-grid { width: 100%; }
+  .price-card { padding-left: 20px; padding-right: 20px; }
+  .plan-bottles { height: 132px !important; }
+  .plan-bottles img { max-height: 116px; }
+  .price-card ul { min-height: 0; }
+  .ing-cell { min-height: 0; }
+  table.compare { min-width: 620px; }
+}

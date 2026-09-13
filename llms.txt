@@ -1,0 +1,46 @@
+# ProDentim
+
+> ProDentim is a chewable oral probiotic dietary supplement. Each soft tablet delivers approximately 3.5 billion CFU of a bacterial-strain blend (Lactobacillus paracasei, Lactobacillus reuteri, Streptococcus salivarius), combined with inulin, tricalcium phosphate, malic acid and peppermint. It is formulated to support healthy teeth and gums, long-lasting fresh breath, and ear/nose/throat immune health, as a daily addition to  -  not a replacement for  -  brushing, flossing and professional dental care.
+
+## Site purpose
+
+This website is an independent informational and affiliate resource covering ProDentim: what it is, how it is intended to work, its labeled ingredients, usage guidance, package/pricing options, and the published scientific research relevant to oral probiotics and oral-microbiome health. It is not the manufacturer's official storefront; purchase links lead to the official retailer's checkout.
+
+## Category and entity
+
+- Entity: ProDentim
+- Category: Oral probiotic dietary supplement
+- Topic area: Oral health, oral microbiome, dental hygiene, probiotics
+
+## Key facts (verified against on-site content)
+
+- Format: chewable/dissolvable soft tablet, 30 tablets per bottle
+- Labeled serving: one tablet daily, typically after brushing
+- Labeled probiotic blend: Lactobacillus paracasei, Lactobacillus reuteri, Streptococcus salivarius (~3.5 billion CFU per tablet)
+- Other labeled ingredients: inulin (prebiotic fiber), tricalcium phosphate, malic acid, peppermint
+- Manufacturing: GMP-certified, FDA-registered U.S. facility (this describes manufacturing standards, not FDA approval of the product)
+- Guarantee: 60-day money-back guarantee described by the seller
+- Package options referenced on this site: 1 bottle (30-day supply), 3 bottles (90-day supply), 6 bottles (180-day supply, historically bundled with 3 free digital bonus guides)
+
+## Important disclaimers
+
+- ProDentim has not been evaluated by the U.S. Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease, including gum disease, gingivitis, periodontitis, or tooth decay.
+- ProDentim is not a substitute for brushing, flossing, or professional dental care.
+- Cited research concerns oral probiotics, individual bacterial strains, and related compounds in general  -  it does not constitute clinical trials of the finished ProDentim product, unless explicitly noted otherwise on a given page.
+- Pricing, package composition, and bonus offers are set by the seller and may change; always confirm current terms on the official checkout page before purchasing.
+- This site does not publish fabricated testimonials, star ratings, doctor endorsements, or clinical-trial claims for the finished product.
+
+## Primary pages
+
+- /  -  Homepage: full product overview, ingredients, benefits, pricing, 20-source research section, FAQ
+- /prodentim.html  -  What Is ProDentim: product and ingredient deep dive
+- /official-website.html  -  Official website/pricing/guarantee information
+- /reviews.html  -  Editorial, evidence-based review (no fabricated testimonials)
+- /buy-now.html  -  Buying/ordering guide
+- /disclaimer.html, /privacy-policy.html, /terms-conditions.html, /contact.html  -  Legal and support pages
+
+## Research
+
+The homepage Research & References section (/#research) lists 20 peer-reviewed sources on oral probiotics, oral microbiome balance, dental caries, gingivitis, periodontitis, and halitosis, each linked directly to PubMed or PMC. These sources inform the ingredient science; they are not product-specific clinical trials of ProDentim.
+
+

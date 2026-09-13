@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/prodentim%20reveiws.html", "destination": "/reviews.html", "permanent": true },
+    { "source": "/prodentim%20official%20website.html", "destination": "/official-website.html", "permanent": true },
+    { "source": "/prodentim%20buy%20now.html", "destination": "/buy-now.html", "permanent": true }
+  ]
+}
