@@ -1,5 +1,20 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://priodentim.com/sitemap.xml
+# Allow AI answer/generative engines (AEO/GEO)
+User-agent: GPTBot
+Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://priodentim.com/sitemap.xml
