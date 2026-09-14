@@ -41,8 +41,13 @@
       "@id": "https://priodentim.com/#webpage",
       "url": "https://priodentim.com/",
       "name": "ProDentim Oral Probiotic Supplement | Teeth, Gum & Fresh Breath Support",
-      "isPartOf": { "@id": "https://priodentim.com/#website" },
-      "description": "ProDentim is a chewable oral probiotic formulated to support healthy teeth and gums, fresh breath and oral microbiome balance alongside brushing and flossing."
+      "isPartOf": {
+        "@id": "https://priodentim.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://priodentim.com/#product"
+      },
+      "description": "ProDentim is a soft-tablet oral probiotic dietary supplement formulated to complement a daily oral-care routine."
     },
     {
       "@type": "Organization",
@@ -51,39 +56,30 @@
       "url": "https://priodentim.com/"
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://priodentim.com/#breadcrumb",
-      "itemListElement": [
-        { 
-          "@type": "ListItem", 
-          "position": 1, 
-          "name": "Home", 
-          "item": "https://priodentim.com/" 
-        }
-      ]
-    },
-    {
       "@type": "Product",
       "@id": "https://priodentim.com/#product",
       "name": "ProDentim Oral Probiotic Supplement",
-      "description": "A soft-tablet oral probiotic delivering approximately 3.5 billion CFU of studied bacterial strains, plus inulin, tricalcium phosphate and peppermint, formulated to support teeth, gums and fresh breath.",
-      "brand": { "@type": "Brand", "name": "ProDentim" },
-      "category": "Oral probiotic dietary supplement",
-      "image": "https://priodentim.com/images/prodentim-bottle.jpg",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "1250"
+      "description": "ProDentim is a soft-tablet oral probiotic dietary supplement formulated to complement a daily oral-care routine.",
+      "image": [
+        "https://www.priodentim.com/assets/images/prodentim-bottle-oral-probiotic-supplement.png"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "ProDentim"
       },
+      "category": "Oral probiotic dietary supplement",
+      "url": "https://priodentim.com/",
       "offers": {
         "@type": "Offer",
         "url": "https://priodentim.com/",
         "priceCurrency": "USD",
-        "price": "69.00",
-        "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock"
+        "price": 69.00,
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
       }
-    },
+    }
+  ]
+}
     {
       "@type": "FAQPage",
       "@id": "https://priodentim.com/#faq",
