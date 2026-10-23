@@ -50,6 +50,6 @@
 - [ ] Add and test a monitored public contact email for website and privacy inquiries; no verified address was present in the project.
 - [ ] Verify each linked research paper and its in-page summary against the actual publication.
 - [ ] Use Search Console or another first-party query source to measure candidate keyword demand and performance; no search-volume figures were available in this audit.
-- [ ] After deployment, verify the IndexNow key text is served at the canonical `www` root, then submit changed canonical URLs with `scripts/submit-indexnow.ps1`.
+- [x] After push, verified the IndexNow key file is served at the canonical `www` root and submitted nine updated canonical URLs with `scripts/submit-indexnow.ps1`; the global endpoint returned HTTP 200 (receipt only, not an indexing guarantee).
 - [ ] Submit or refresh the XML sitemap in Google Search Console and Bing Webmaster Tools. Google indexing requests require an authenticated Search Console user; no ranking, indexing date, or outcome can be guaranteed.
 - [ ] Review actual Google and Bing impressions/queries after data collection; no live search-result snapshot or verified competitor ranking data was available for this work.

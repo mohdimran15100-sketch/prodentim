@@ -31,7 +31,7 @@
 - Tightened page-specific descriptions and aligned them with social metadata and existing WebPage JSON-LD; added answer-first ProDentim price and billing FAQs without publishing unverified amounts.
 - Added an evidence summary to the editorial review and linked product/review content to the seller's public FAQ. Existing visible research references remain distinguished from product-specific evidence.
 - Expanded `KEYWORD_MAP.md` to map the requested brand, ingredient, use, safety, complaint, review, legitimacy, efficacy, pricing, official-site, refund, category, and alternatives topics to a primary page/section. Demand is explicitly unmeasured; no keyword stuffing or thin pages were added.
-- Added IndexNow key-file verification and `scripts/submit-indexnow.ps1`. After deployment, submit only changed canonical URLs using the script. HTTP 200 confirms receipt; HTTP 202 may be returned while the key is first verified. Neither response guarantees indexing. Google URL inspection requires Search Console.
+- Added IndexNow key-file verification and `scripts/submit-indexnow.ps1`. After deployment, verified the public key file returned HTTP 200 and submitted nine updated canonical URLs to the global IndexNow endpoint on 2026-10-23; the endpoint returned HTTP 200. This confirms receipt/processing only, not crawling or indexing. Google URL inspection requires Search Console.
 - No spam backlink services, automated directory links, or fabricated third-party citations were created. No public search-result dataset or current keyword analytics was available to prove which competing sites rank at the top.
 
 ## Exact files changed
@@ -87,7 +87,7 @@ The original SEO baseline was previously committed and pushed as `c8d34ac`. The 
 - In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact affected URL is not available in this audit, and no indexing request was made.
 - Confirm the deployed Vercel release corresponds to the pushed `main` commit, then crawl production URLs and confirm redirects, canonicals, visible copy, affiliate destinations, sitemap and robots behavior.
 - Review analytics/Search Console query data before prioritizing keywords or making demand claims.
-- Deploy the new IndexNow key file and updated pages, then run the IndexNow script for changed canonical URLs. The script confirms only whether the endpoint received the URLs.
+- The public IndexNow key file and updated homepage, review page, and pricing page returned HTTP 200 after push. Nine updated canonical URLs were submitted to the global IndexNow endpoint, which returned HTTP 200; confirm crawl/indexing separately in Bing Webmaster Tools.
 - In Google Search Console, submit/refresh the sitemap and use URL Inspection for the intended canonical pages; no Google account access or indexing guarantee is available in this environment.
 - For Bing, verify the site in Bing Webmaster Tools or import its verified Search Console property, submit the sitemap, and confirm IndexNow status after the key file is live.
 - Build backlinks through real editorial references and relevant, voluntary outreach. Do not buy, automate, or mass-submit low-quality links.

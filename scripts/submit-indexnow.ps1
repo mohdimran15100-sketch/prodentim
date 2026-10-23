@@ -43,6 +43,7 @@ try {
     $response = Invoke-WebRequest `
         -Uri 'https://api.indexnow.org/indexnow' `
         -Method Post `
+        -UseBasicParsing `
         -ContentType 'application/json; charset=utf-8' `
         -Body $payload
 }
