@@ -1,7 +1,7 @@
 # ProDentim keyword map
 
 **Market:** United States  
-**Reviewed:** 2026-11-29  
+**Reviewed:** 2026-10-23
 **Evidence limitation:** The terms below are candidate queries supplied in the project request. No Google Search Console, Keyword Planner, paid keyword-tool, or other query-volume data was available. Search demand, rankings, and conversion intent are therefore not quantified; intent labels are editorial hypotheses, not measured user data.
 
 | Candidate query / topic | Target page or section | Intent hypothesis | Primary keyword | Supporting terms | Demand evidence | Content recommendation |

@@ -1,12 +1,12 @@
 # ProDentim SEO and trust audit
 
-**Audit date:** 2026-11-29  
+**Audit date:** 2026-10-23
 **Target market:** United States  
 **Project:** Static HTML/CSS/JavaScript website deployed with Vercel.
 
 ## Scope and evidence
 
-Reviewed the nine public HTML pages, shared styles and script references, image paths, page metadata, embedded JSON-LD, `robots.txt`, `sitemap.xml`, and `vercel.json`. The site has no dependency manifest, configured test runner, or Git repository in the inspected project directory.
+Reviewed the nine public HTML pages, shared styles and script references, image paths, page metadata, embedded JSON-LD, `robots.txt`, `sitemap.xml`, and `vercel.json`. The project is a Git repository. It has no dependency manifest or configured build, lint, or test runner.
 
 Live pages reviewed:
 
@@ -28,21 +28,29 @@ No Search Console account, keyword research subscription, query report, ranking 
 8. **Metadata/content mismatch:** At least one public content page had duplicate or generic metadata before cleanup. Page descriptions and schema also reflected unverified strain claims.
 9. **Homepage markup/content issues:** The source had extra document-wrapper closures and duplicate FAQ anchor IDs; several headings/sections presented formula and effect claims not supported by the accessible product FAQ.
 10. **No quantitative keyword evidence:** Candidate query terms were supplied by the requester, but no measured demand data was available.
-11. **Unusable contact placeholder:** The contact page displayed `[email protected]`, which is not a verified operational address.
+11. **No monitored contact method:** The project does not provide a verified website contact email or form; the site owner must publish and test one before inviting website or privacy inquiries.
 
 ## Technical observations
 
 - Vercel configuration has `cleanUrls: true` and legacy-path redirects. Current canonicals and sitemap entries use `https://www.priodentim.com/` with clean page paths.
 - `robots.txt` allows crawling and references the sitemap on the preferred host. No blocking directive was warranted.
-- The current affiliate URL resolves through ClickBank to the seller flow; prior audit testing returned a successful destination response. Affiliate links remain tagged `rel="nofollow sponsored noopener"`.
+- The two existing ClickBank affiliate URLs both returned HTTP 307 and a `Location` header to `https://prodentim.com/text.php` with the same affiliate `hop` identifier. Links remain tagged `rel="nofollow sponsored noopener"`; checkout contents and terms still require seller-side verification.
 - Important content is in static HTML. No client-side rendering dependency was found for the main page content.
 - Local static validation found one title, description, canonical, and H1 per HTML page; one document wrapper per page; no duplicate IDs; all embedded JSON-LD parses; and local assets/page references resolve when Vercel clean routes are mapped to their `.html` source files.
-- Local homepage browser preview at a 375px viewport had no horizontal overflow and all 14 images reported loaded. This is a browser spot-check, not a Core Web Vitals measurement.
+- Local homepage browser previews at 375px and 1280px viewports had no horizontal overflow; all 14 homepage images decoded successfully after lazy loading was forced for the check. This is a browser spot-check, not a Core Web Vitals measurement.
+
+## Follow-up content and design work
+
+- Replaced the monochrome/white presentation with a navy, blue, and teal visual system while retaining the existing page structure and assets.
+- Updated mobile-menu ARIA state handling and added missing homepage menu-icon spans.
+- Tightened buying, product, research, comparison, privacy, and contact copy to distinguish seller statements from verified facts and to avoid implying a verified checkout destination.
+- Reduced the homepage research list to eight selected, oral-probiotic references, removing tangential studies; the citations and editorial summaries still require publication-level review.
+- Updated the seller-attributed shipping table and promotional-artwork descriptions; these statements are not a verified checkout quote or offer.
 
 ## Limits and manual verification
 
 - Current package label, complete formula, strain names, ingredient amounts, allergens, safety profile, manufacturing claims, and batch testing remain unverified. Product artwork must not be treated as label evidence.
 - Current checkout price, inventory, selected-package shipping, subscription/renewal terms, bonuses, and final refund mechanics require a fresh manual check in the retailer checkout.
 - The seller FAQ lists free U.S. shipping and a 60-day unused-product return; confirm both apply to the specific live offer and destination.
-- A public-site fetch after the local edits still showed the prior deployed page content. No deployment was performed; local changes will not appear live until the site owner deploys them.
-- No formal HTML conformance service, Schema.org validator, accessibility audit, browser console log capture, Lighthouse run, or production HTTP crawl was available in the local project validation.
+- The last production-page fetch occurred before this follow-up implementation. No deployment or post-change production crawl was performed.
+- A local homepage reload recorded no console or page errors. The mobile menu was spot-checked with pointer/keyboard interaction and its expanded state/close-on-link behavior. These are focused checks, not a full accessibility audit. No formal HTML conformance service, Schema.org validator, Lighthouse run, or production HTTP crawl was performed.

@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (toggle && menu) {
     menu.id = menu.id || 'primary-navigation';
-    toggle.setAttribute('aria-controls', menu.id);
-    toggle.setAttribute('aria-expanded', 'false');
     if (menuLabel) {
       menuLabel.setAttribute('role', 'button');
       menuLabel.setAttribute('tabindex', '0');
       menuLabel.setAttribute('aria-label', 'Toggle navigation');
+      menuLabel.setAttribute('aria-controls', menu.id);
+      menuLabel.setAttribute('aria-expanded', String(toggle.checked));
       menuLabel.addEventListener('keydown', function (event) {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();
@@ -19,13 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     }
+    menu.classList.toggle('is-open', toggle.checked);
     toggle.addEventListener('change', function () {
-      toggle.setAttribute('aria-expanded', String(toggle.checked));
+      menu.classList.toggle('is-open', toggle.checked);
+      if (menuLabel) {
+        menuLabel.setAttribute('aria-expanded', String(toggle.checked));
+      }
     });
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         toggle.checked = false;
-        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+        if (menuLabel) {
+          menuLabel.setAttribute('aria-expanded', 'false');
+        }
       });
     });
   }

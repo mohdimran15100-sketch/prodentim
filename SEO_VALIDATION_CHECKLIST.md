@@ -1,6 +1,6 @@
 # SEO validation checklist
 
-**Local validation date:** 2026-11-29  
+**Local validation date:** 2026-10-23
 **Deployment status:** Not deployed.
 
 ## Completed
@@ -12,19 +12,22 @@
 - [x] Parsed `sitemap.xml`; confirmed it contains nine URLs, all on the preferred host.
 - [x] Confirmed `robots.txt` allows crawling and points to `https://www.priodentim.com/sitemap.xml`.
 - [x] Checked local IDs for duplicates and local page/image references, resolving Vercel extensionless routes to their `.html` source pages for the check.
+- [x] Verified local `href`/`src` targets, same-page and internal-page fragments, and image `alt` attributes across all nine HTML files.
 - [x] Confirmed one `DOCTYPE`, `html`, `head`, and `body` wrapper in each HTML page.
 - [x] Confirmed no local numeric price/savings claims or review/rating schema remain in the key commercial pages.
-- [x] Browser preview of the homepage at 375px width: no horizontal body overflow; all 14 homepage images loaded.
-- [x] Preserved affiliate link targets and `nofollow sponsored noopener` attributes. The existing affiliate destination had previously been checked and returned a successful seller-page response.
-- [x] No package manifest, configured lint/build/test runner, or Git repository was present, so no npm build, automated test suite, or Git checkpoint was available.
+- [x] Browser spot-check at 375px on the homepage and representative product/commercial pages found no horizontal overflow or broken images; all 14 homepage images decoded when lazy loading was forced for the check.
+- [x] Browser spot-check at 1280px on the homepage found no horizontal overflow. A local homepage reload recorded no console or page errors.
+- [x] Tested the mobile menu with pointer/keyboard interaction: `aria-expanded` tracks the open state, the menu opens, and following a menu link closes it.
+- [x] HEAD-checked both existing ClickBank affiliate URLs; each returned HTTP 307 to the seller FAQ URL with the same affiliate identifier. Link targets were preserved and affiliate `rel` attributes remain present.
+- [x] No package manifest or configured lint/build/test runner was found. The project is a Git repository; the focused static and browser checks above were used instead.
 
 ## Not completed / owner action
 
-- [ ] Deploy the local changes through the approved Vercel release process. The public site fetch still serves the previous deployed content.
-- [ ] Recheck all production canonical and legacy redirects, status codes, internal links, affiliate redirect destination, sitemap fetch, and robots fetch after deployment.
+- [ ] Deploy the local changes through the approved Vercel release process. No post-change production deployment or crawl was performed.
+- [ ] Recheck all production canonical and legacy redirects, status codes, internal links, affiliate destination, sitemap fetch, and robots fetch after deployment.
 - [ ] Run Google Rich Results Test and Schema.org Validator against production-rendered URLs.
 - [ ] Run Lighthouse or Web Vitals field/lab measurement on production; the local spot-check does not establish CWV performance.
-- [ ] Capture browser console errors, complete keyboard/screen-reader accessibility checks, and test the full page set at desktop and mobile sizes.
+- [ ] Complete keyboard/screen-reader accessibility checks and test the full page set at desktop and mobile sizes.
 - [ ] Obtain current package labels and written seller documentation for formula/strains, warnings, manufacturing/certification, price, shipping, billing, package contents, bonuses, and all refund conditions.
 - [ ] Add and test a monitored public contact email for website and privacy inquiries; no verified address was present in the project.
 - [ ] Verify each linked research paper and its in-page summary against the actual publication.

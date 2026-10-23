@@ -1,46 +1,33 @@
-# ProDentim
+# ProDentim information site
 
-> ProDentim is a chewable oral probiotic dietary supplement. Each soft tablet delivers approximately 3.5 billion CFU of a bacterial-strain blend (Lactobacillus paracasei, Lactobacillus reuteri, Streptococcus salivarius), combined with inulin, tricalcium phosphate, malic acid and peppermint. It is formulated to support healthy teeth and gums, long-lasting fresh breath, and ear/nose/throat immune health, as a daily addition to  -  not a replacement for  -  brushing, flossing and professional dental care.
+> This is an independent informational and affiliate website about ProDentim, a supplement marketed by a third party. It is not the product seller or a medical provider.
 
-## Site purpose
+## Source and accuracy limits
 
-This website is an independent informational and affiliate resource covering ProDentim: what it is, how it is intended to work, its labeled ingredients, usage guidance, package/pricing options, and the published scientific research relevant to oral probiotics and oral-microbiome health. It is not the manufacturer's official storefront; purchase links lead to the official retailer's checkout.
+- The seller's public FAQ reviewed for this site describes a dissolvable oral-probiotic tablet with three strains totaling approximately 3.5 billion CFU and recommends slowly chewing one tablet each morning.
+- That FAQ does not name the strains or provide a complete current ingredient panel. Ingredient names shown in promotional artwork on this website are not verified package-label information.
+- The seller FAQ describes a 60-day money-back guarantee with unused-product return. Confirm current eligibility, timing, procedure and costs in the seller's written terms.
+- Product prices, stock, package contents, shipping, billing terms and promotional bonuses were not independently verified. Check the complete checkout order summary before purchase.
+- This site did not identify a ProDentim-specific clinical trial in the sources reviewed. Research linked here concerns oral probiotics or other specific interventions and does not establish the finished product's effects.
+- This website does not publish customer testimonials, star ratings, or product-review claims as verified evidence.
 
-## Category and entity
+## Health information
 
-- Entity: ProDentim
-- Category: Oral probiotic dietary supplement
-- Topic area: Oral health, oral microbiome, dental hygiene, probiotics
+- This site provides general information, not medical or dental advice.
+- Dietary supplements are not FDA-approved to diagnose, treat, cure, or prevent disease.
+- Do not replace brushing, cleaning between teeth, or professional dental care with a supplement.
+- Review the current package label and consult a qualified healthcare professional about individual health or safety questions.
 
-## Key facts (verified against on-site content)
+## Website pages
 
-- Format: chewable/dissolvable soft tablet, 30 tablets per bottle
-- Labeled serving: one tablet daily, typically after brushing
-- Labeled probiotic blend: Lactobacillus paracasei, Lactobacillus reuteri, Streptococcus salivarius (~3.5 billion CFU per tablet)
-- Other labeled ingredients: inulin (prebiotic fiber), tricalcium phosphate, malic acid, peppermint
-- Manufacturing: GMP-certified, FDA-registered U.S. facility (this describes manufacturing standards, not FDA approval of the product)
-- Guarantee: 60-day money-back guarantee described by the seller
-- Package options referenced on this site: 1 bottle (30-day supply), 3 bottles (90-day supply), 6 bottles (180-day supply, historically bundled with 3 free digital bonus guides)
+- `/`: Product overview, selected research references, offer-artwork caveats, and FAQs.
+- `/prodentim`: Product description, ingredient-verification limits, directions attributed to the seller FAQ, and research limitations.
+- `/reviews`: Editorial review, evidence limits, safety considerations, and complaints-data limitations.
+- `/buy-now`: Affiliate-link and checkout verification guidance.
+- `/official-website`: Seller destination, shipping information attributed to the seller FAQ, and checkout/return-term cautions.
+- `/contact`: Website and order-support guidance.
+- `/privacy-policy`, `/disclaimer`, `/terms-conditions`: Site policies and disclosures.
 
-## Important disclaimers
+## Affiliate disclosure
 
-- ProDentim has not been evaluated by the U.S. Food and Drug Administration and is not intended to diagnose, treat, cure, or prevent any disease, including gum disease, gingivitis, periodontitis, or tooth decay.
-- ProDentim is not a substitute for brushing, flossing, or professional dental care.
-- Cited research concerns oral probiotics, individual bacterial strains, and related compounds in general  -  it does not constitute clinical trials of the finished ProDentim product, unless explicitly noted otherwise on a given page.
-- Pricing, package composition, and bonus offers are set by the seller and may change; always confirm current terms on the official checkout page before purchasing.
-- This site does not publish fabricated testimonials, star ratings, doctor endorsements, or clinical-trial claims for the finished product.
-
-## Primary pages
-
-- /  -  Homepage: full product overview, ingredients, benefits, pricing, 20-source research section, FAQ
-- /prodentim.html  -  What Is ProDentim: product and ingredient deep dive
-- /official-website.html  -  Official website/pricing/guarantee information
-- /reviews.html  -  Editorial, evidence-based review (no fabricated testimonials)
-- /buy-now.html  -  Buying/ordering guide
-- /disclaimer.html, /privacy-policy.html, /terms-conditions.html, /contact.html  -  Legal and support pages
-
-## Research
-
-The homepage Research & References section (/#research) lists 20 peer-reviewed sources on oral probiotics, oral microbiome balance, dental caries, gingivitis, periodontitis, and halitosis, each linked directly to PubMed or PMC. These sources inform the ingredient science; they are not product-specific clinical trials of ProDentim.
-
-
+Purchase links use affiliate tracking. The site may receive a commission if a visitor purchases through a link. The link redirects outside this website; verify the final seller and checkout domain before providing payment details.

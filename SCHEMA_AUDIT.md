@@ -1,6 +1,6 @@
 # Structured data audit
 
-**Audit date:** 2026-11-29
+**Audit date:** 2026-10-23
 
 ## Before-and-after findings
 
