@@ -1,7 +1,8 @@
 # SEO implementation report
 
-**Completed locally:** 2026-10-23
-**Deployment:** Not performed.
+**Updated:** 2026-10-23
+**GitHub:** Changes pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+**Deployment:** No manual deployment was performed. Production HTTP checks are recorded below; the apex-to-`www` permanent redirect is not yet confirmed live.
 
 ## Fixes implemented
 
@@ -26,7 +27,7 @@
 - Updated this report set to distinguish completed local checks from follow-up checks and owner-side verification.
 - Fixed confirmed text mojibake in research captions/headings and package-artwork separators; preserved intended em dashes, an arrow, and middle dots.
 - Added a recursive UTF-8/mojibake audit script at `scripts/audit-encoding.ps1`. It validates strict UTF-8 bytes, HTML charset placement, common mojibake/replacement characters, and possible double-escaped numeric entities without rewriting source.
-- Investigated the Search Console “Alternative page with proper canonical tag” report: live `www` pages return 200 with matching self-canonicals, while the apex host currently redirects temporarily (307). Added a Vercel host-conditional permanent redirect to the preferred `www` host and made legacy page aliases point directly to their clean canonical URLs. The production host redirect must be rechecked after Vercel deploys the configuration.
+- Investigated the Search Console “Alternative page with proper canonical tag” report: on 2026-10-23, the live `www` homepage and `/prodentim` returned 200, the homepage declared the expected `www` canonical, and `robots.txt`/`sitemap.xml` returned 200. Apex requests still returned 307. Added and pushed a Vercel host-conditional permanent redirect to the preferred `www` host and made legacy page aliases point directly to their clean canonical URLs; the observed 307 indicates the project rule is not controlling the live apex redirect. Vercel domain-level settings need inspection.
 
 ## Exact files changed
 
@@ -47,13 +48,16 @@
 15. `SCHEMA_AUDIT.md`
 16. `SEO_VALIDATION_CHECKLIST.md`
 17. `scripts/audit-encoding.ps1`
+18. `vercel.json`
 
-The original SEO baseline was previously committed and pushed as `c8d34ac`. This report covers the follow-up implementation; no deployment was performed.
+The original SEO baseline was previously committed and pushed as `c8d34ac`. The follow-up encoding/canonical changes are pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
 
 ## Remaining work for the site owner
 
 - Confirm the current label/formula, all safety and manufacturing claims, price/stock, package contents, shipping, recurring billing, bonuses, and complete guarantee/return policy directly with authoritative seller documentation.
 - Review each research citation and its summary against the linked publication before relying on it for editorial conclusions.
-- Deploy through the normal release process, then crawl production URLs and confirm redirects, canonicals, visible copy, affiliate destinations, sitemap and robots behavior.
+- In Vercel Project Settings → Domains, inspect the apex-to-`www` redirect and configure it to return a permanent redirect if Vercel's domain-level rule is taking precedence over `vercel.json`. Then verify apex requests return HTTP 308 and preserve the requested path; current production still returns 307.
+- In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact affected URL is not available in this audit, and no indexing request was made.
+- Confirm the deployed Vercel release corresponds to the pushed `main` commit, then crawl production URLs and confirm redirects, canonicals, visible copy, affiliate destinations, sitemap and robots behavior.
 - Review analytics/Search Console query data before prioritizing keywords or making demand claims.
 - Publish and test a monitored contact email for website/privacy inquiries; no verified address was available in the project.

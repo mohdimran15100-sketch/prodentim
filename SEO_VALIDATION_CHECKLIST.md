@@ -1,7 +1,8 @@
 # SEO validation checklist
 
 **Local validation date:** 2026-10-23
-**Deployment status:** Not deployed.
+**GitHub status:** Pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+**Production status:** `www` endpoints checked; apex still returns HTTP 307. No manual deployment was performed.
 
 ## Completed
 
@@ -24,13 +25,16 @@
 - [x] Confirmed the live Vercel homepage response uses `Content-Type: text/html; charset=utf-8`; the local deployment configuration does not override response headers.
 - [x] Reviewed valid Unicode punctuation restored in the research headings/captions and product artwork captions; intended meaning and scientific names are unchanged.
 - [x] Added an explicit Vercel host-conditional permanent redirect from `priodentim.com/*` to the matching `www.priodentim.com/*` canonical URL and pointed legacy page aliases directly to clean `www` URLs.
+- [x] Production HTTP checks on 2026-10-23: `www` homepage and `/prodentim` return HTTP 200; homepage canonical points to `https://www.priodentim.com/`; `robots.txt` and `sitemap.xml` return HTTP 200.
+- [x] Confirmed the GitHub `main` branch and local `HEAD` both point to `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+- [x] Production apex homepage and `/prodentim` currently redirect with HTTP 307 to the corresponding `www` URLs; this is recorded as unresolved rather than treated as a permanent redirect fix.
 - [x] No package manifest or configured lint/build/test runner was found. The project is a Git repository; the focused static and browser checks above were used instead.
 
 ## Not completed / owner action
 
-- [ ] Deploy the local changes through the approved Vercel release process. No post-change production deployment or crawl was performed.
-- [ ] After deploying, verify apex requests return HTTP 308 directly to the equivalent `www` URL; recheck all canonical and legacy redirects, status codes, internal links, affiliate destination, sitemap fetch, and robots fetch.
-- [ ] In Search Console URL Inspection, inspect the exact reported URL and its canonical target. Request indexing for the canonical URL only after Google reports the correct selected canonical and the updated permanent redirect is live.
+- [ ] Confirm the active Vercel deployment corresponds to the pushed `main` commit. No manual deployment was performed.
+- [ ] Inspect Vercel Project Settings → Domains: the current apex-to-`www` HTTP 307 appears to be applied before the project redirect rule. Configure a permanent redirect if available, then verify apex requests return HTTP 308 to the matching `www` path. The project cannot change an overriding Vercel domain-level redirect.
+- [ ] In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact reported URL was not available; request indexing only for the canonical URL if inspection shows that is appropriate.
 - [ ] Run Google Rich Results Test and Schema.org Validator against production-rendered URLs.
 - [ ] Run Lighthouse or Web Vitals field/lab measurement on production; the local spot-check does not establish CWV performance.
 - [ ] Complete keyboard/screen-reader accessibility checks and test the full page set at desktop and mobile sizes.
