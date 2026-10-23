@@ -1,7 +1,7 @@
 # SEO validation checklist
 
 **Local validation date:** 2026-10-23
-**GitHub status:** Pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+**GitHub status:** Current follow-up changes are committed and pushed to `origin/main`.
 **Production status:** `www` endpoints checked; apex still returns HTTP 307. No manual deployment was performed.
 
 ## Completed
@@ -30,6 +30,12 @@
 - [x] Confirmed the GitHub `main` branch and local `HEAD` both point to `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
 - [x] Production apex homepage and `/prodentim` currently redirect with HTTP 307 to the corresponding `www` URLs; this is recorded as unresolved rather than treated as a permanent redirect fix.
 - [x] No package manifest or configured lint/build/test runner was found. The project is a Git repository; the focused static and browser checks above were used instead.
+- [x] Reviewed page-specific metadata intent and aligned Open Graph/Twitter/WebPage descriptions on updated commercial/editorial pages.
+- [x] Added concise visible answers for current ProDentim price and possible recurring billing without inventing offer amounts or terms.
+- [x] Expanded keyword intent mapping while keeping pricing, editorial review, ingredient/use and research intent on distinct pages/sections to avoid keyword cannibalization.
+- [x] Added a root IndexNow key file and a host-validated submission script for changed canonical URLs. Script receipt is not an indexing guarantee.
+- [x] Checked the live seller FAQ and ADA home-care reference; retained seller attribution and did not turn ingredient/category research into product-specific medical claims.
+- [x] Refused artificial backlink creation; no spam links or unsupported ranking claims were introduced.
 
 ## Not completed / owner action
 
@@ -44,3 +50,6 @@
 - [ ] Add and test a monitored public contact email for website and privacy inquiries; no verified address was present in the project.
 - [ ] Verify each linked research paper and its in-page summary against the actual publication.
 - [ ] Use Search Console or another first-party query source to measure candidate keyword demand and performance; no search-volume figures were available in this audit.
+- [ ] After deployment, verify the IndexNow key text is served at the canonical `www` root, then submit changed canonical URLs with `scripts/submit-indexnow.ps1`.
+- [ ] Submit or refresh the XML sitemap in Google Search Console and Bing Webmaster Tools. Google indexing requests require an authenticated Search Console user; no ranking, indexing date, or outcome can be guaranteed.
+- [ ] Review actual Google and Bing impressions/queries after data collection; no live search-result snapshot or verified competitor ranking data was available for this work.

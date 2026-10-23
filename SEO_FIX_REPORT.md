@@ -1,7 +1,7 @@
 # SEO implementation report
 
 **Updated:** 2026-10-23
-**GitHub:** Changes pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+**GitHub:** Previous canonical updates were pushed to `origin/main`; this follow-up is committed and pushed separately after local validation.
 **Deployment:** No manual deployment was performed. Production HTTP checks are recorded below; the apex-to-`www` permanent redirect is not yet confirmed live.
 
 ## Fixes implemented
@@ -28,6 +28,11 @@
 - Fixed confirmed text mojibake in research captions/headings and package-artwork separators; preserved intended em dashes, an arrow, and middle dots.
 - Added a recursive UTF-8/mojibake audit script at `scripts/audit-encoding.ps1`. It validates strict UTF-8 bytes, HTML charset placement, common mojibake/replacement characters, and possible double-escaped numeric entities without rewriting source.
 - Investigated the Search Console “Alternative page with proper canonical tag” report: on 2026-10-23, the live `www` homepage and `/prodentim` returned 200, the homepage declared the expected `www` canonical, and `robots.txt`/`sitemap.xml` returned 200. Apex requests still returned 307. Added and pushed a Vercel host-conditional permanent redirect to the preferred `www` host and made legacy page aliases point directly to their clean canonical URLs; the observed 307 indicates the project rule is not controlling the live apex redirect. Vercel domain-level settings need inspection.
+- Tightened page-specific descriptions and aligned them with social metadata and existing WebPage JSON-LD; added answer-first ProDentim price and billing FAQs without publishing unverified amounts.
+- Added an evidence summary to the editorial review and linked product/review content to the seller's public FAQ. Existing visible research references remain distinguished from product-specific evidence.
+- Expanded `KEYWORD_MAP.md` to map the requested brand, ingredient, use, safety, complaint, review, legitimacy, efficacy, pricing, official-site, refund, category, and alternatives topics to a primary page/section. Demand is explicitly unmeasured; no keyword stuffing or thin pages were added.
+- Added IndexNow key-file verification and `scripts/submit-indexnow.ps1`. After deployment, submit only changed canonical URLs using the script. HTTP 200 confirms receipt; HTTP 202 may be returned while the key is first verified. Neither response guarantees indexing. Google URL inspection requires Search Console.
+- No spam backlink services, automated directory links, or fabricated third-party citations were created. No public search-result dataset or current keyword analytics was available to prove which competing sites rank at the top.
 
 ## Exact files changed
 
@@ -49,8 +54,30 @@
 16. `SEO_VALIDATION_CHECKLIST.md`
 17. `scripts/audit-encoding.ps1`
 18. `vercel.json`
+19. `019de53d2ca0d96b03c6651870a697bf.txt`
+20. `scripts/submit-indexnow.ps1`
+21. `sitemap.xml`
 
-The original SEO baseline was previously committed and pushed as `c8d34ac`. The follow-up encoding/canonical changes are pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`.
+The original SEO baseline was previously committed and pushed as `c8d34ac`. The follow-up encoding/canonical changes are pushed to `origin/main` at `ec073d58b5572f49ff3d7fa8db4fc000f421b1e8`. This on-page SEO and IndexNow follow-up is pushed to `origin/main` at the commit recorded in GitHub after local validation.
+
+## Files changed in this follow-up
+
+1. `KEYWORD_MAP.md`
+2. `SEO_AUDIT.md`
+3. `SEO_FIX_REPORT.md`
+4. `SEO_VALIDATION_CHECKLIST.md`
+5. `buy-now.html`
+6. `contact.html`
+7. `disclaimer.html`
+8. `index.html`
+9. `official-website.html`
+10. `privacy-policy.html`
+11. `prodentim.html`
+12. `reviews.html`
+13. `sitemap.xml`
+14. `terms-conditions.html`
+15. `019de53d2ca0d96b03c6651870a697bf.txt`
+16. `scripts/submit-indexnow.ps1`
 
 ## Remaining work for the site owner
 
@@ -60,4 +87,8 @@ The original SEO baseline was previously committed and pushed as `c8d34ac`. The 
 - In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact affected URL is not available in this audit, and no indexing request was made.
 - Confirm the deployed Vercel release corresponds to the pushed `main` commit, then crawl production URLs and confirm redirects, canonicals, visible copy, affiliate destinations, sitemap and robots behavior.
 - Review analytics/Search Console query data before prioritizing keywords or making demand claims.
+- Deploy the new IndexNow key file and updated pages, then run the IndexNow script for changed canonical URLs. The script confirms only whether the endpoint received the URLs.
+- In Google Search Console, submit/refresh the sitemap and use URL Inspection for the intended canonical pages; no Google account access or indexing guarantee is available in this environment.
+- For Bing, verify the site in Bing Webmaster Tools or import its verified Search Console property, submit the sitemap, and confirm IndexNow status after the key file is live.
+- Build backlinks through real editorial references and relevant, voluntary outreach. Do not buy, automate, or mass-submit low-quality links.
 - Publish and test a monitored contact email for website/privacy inquiries; no verified address was available in the project.

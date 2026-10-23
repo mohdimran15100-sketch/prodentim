@@ -49,6 +49,11 @@ No Search Console account, keyword research subscription, query report, ranking 
 - Updated the seller-attributed shipping table and promotional-artwork descriptions; these statements are not a verified checkout quote or offer.
 - Corrected confirmed mojibake in visible research captions/headings and package-artwork separators; no source bytes were invalid UTF-8.
 - Added a non-mutating recursive encoding audit. All 21 text source files pass strict UTF-8 validation; the nine HTML pages declare UTF-8 as the first `<head>` element. Eight HTML files use a valid UTF-8 BOM.
+- Follow-up competitor/content review checked the seller's public FAQ, the American Dental Association's home-care guidance, Google's SEO Starter Guide, IndexNow documentation, and the supplied DerilaErgo landing page. The latter sells an unrelated pillow product; only general organization/conversion ideas are relevant, and no pillow claims or keywords were reused. A reliable live search-results/competitor-ranking dataset was not available, so no “top-ranking niche site” or ranking claim is made.
+- The price page now answers current-cost and billing-model questions directly without inventing prices. The editorial review starts with an answer summary and explicitly states why it does not display unverified customer testimonials or star ratings. The ingredient/use page links to the seller FAQ, while the homepage's existing research section continues to distinguish studies of other probiotic interventions from evidence on the finished product.
+- Titles and descriptions were aligned with each page's actual topic and updated in Open Graph/Twitter and WebPage JSON-LD where present. Metadata avoids claiming verified current prices, customer ratings, or product-specific clinical results.
+- Added an IndexNow verification key and a guarded PowerShell submission script for canonical URLs on the `www` host. This can notify Bing/participating IndexNow engines after deployment; a successful response means receipt only, not guaranteed crawling, indexing, or ranking. Google indexing requests still require Search Console access.
+- No artificial or paid-for free-backlink submissions were made. The site retains editorial links to primary/seller sources and the ADA's oral-care guidance; earned links require genuine outreach or citations.
 
 ## Limits and manual verification
 
