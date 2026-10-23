@@ -46,6 +46,8 @@ No Search Console account, keyword research subscription, query report, ranking 
 - Tightened buying, product, research, comparison, privacy, and contact copy to distinguish seller statements from verified facts and to avoid implying a verified checkout destination.
 - Reduced the homepage research list to eight selected, oral-probiotic references, removing tangential studies; the citations and editorial summaries still require publication-level review.
 - Updated the seller-attributed shipping table and promotional-artwork descriptions; these statements are not a verified checkout quote or offer.
+- Corrected confirmed mojibake in visible research captions/headings and package-artwork separators; no source bytes were invalid UTF-8.
+- Added a non-mutating recursive encoding audit. All 21 text source files pass strict UTF-8 validation; the nine HTML pages declare UTF-8 as the first `<head>` element. Eight HTML files use a valid UTF-8 BOM.
 
 ## Limits and manual verification
 
@@ -54,3 +56,4 @@ No Search Console account, keyword research subscription, query report, ranking 
 - The seller FAQ lists free U.S. shipping and a 60-day unused-product return; confirm both apply to the specific live offer and destination.
 - The last production-page fetch occurred before this follow-up implementation. No deployment or post-change production crawl was performed.
 - A local homepage reload recorded no console or page errors. The mobile menu was spot-checked with pointer/keyboard interaction and its expanded state/close-on-link behavior. These are focused checks, not a full accessibility audit. No formal HTML conformance service, Schema.org validator, Lighthouse run, or production HTTP crawl was performed.
+- The live homepage response was observed with `Content-Type: text/html; charset=utf-8`; `vercel.json` does not define custom response headers.

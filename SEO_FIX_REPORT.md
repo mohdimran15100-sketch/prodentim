@@ -24,6 +24,8 @@
 - Replaced overconfident checkout, authenticity, support, privacy-cookie, and testimonial language with explicit limits and seller attribution.
 - Replaced `llms.txt` with a concise account of the source and evidence limits rather than unsupported formula, manufacturing, and benefit claims.
 - Updated this report set to distinguish completed local checks from follow-up checks and owner-side verification.
+- Fixed confirmed text mojibake in research captions/headings and package-artwork separators; preserved intended em dashes, an arrow, and middle dots.
+- Added a recursive UTF-8/mojibake audit script at `scripts/audit-encoding.ps1`. It validates strict UTF-8 bytes, HTML charset placement, common mojibake/replacement characters, and possible double-escaped numeric entities without rewriting source.
 
 ## Exact files changed
 
@@ -43,6 +45,7 @@
 14. `SEO_FIX_REPORT.md`
 15. `SCHEMA_AUDIT.md`
 16. `SEO_VALIDATION_CHECKLIST.md`
+17. `scripts/audit-encoding.ps1`
 
 The original SEO baseline was previously committed and pushed as `c8d34ac`. This report covers the follow-up implementation; no deployment was performed.
 

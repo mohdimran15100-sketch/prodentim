@@ -19,6 +19,10 @@
 - [x] Browser spot-check at 1280px on the homepage found no horizontal overflow. A local homepage reload recorded no console or page errors.
 - [x] Tested the mobile menu with pointer/keyboard interaction: `aria-expanded` tracks the open state, the menu opens, and following a menu link closes it.
 - [x] HEAD-checked both existing ClickBank affiliate URLs; each returned HTTP 307 to the seller FAQ URL with the same affiliate identifier. Link targets were preserved and affiliate `rel` attributes remain present.
+- [x] Scanned 21 text-based source files with `scripts/audit-encoding.ps1`: all are valid UTF-8; zero confirmed mojibake, replacement characters, suspicious prefixes, or double-escaped numeric entities remain.
+- [x] Confirmed all nine HTML documents declare UTF-8 as the first element inside `<head>`. Eight retain a valid UTF-8 BOM; the audit reports those as informational only.
+- [x] Confirmed the live Vercel homepage response uses `Content-Type: text/html; charset=utf-8`; the local deployment configuration does not override response headers.
+- [x] Reviewed valid Unicode punctuation restored in the research headings/captions and product artwork captions; intended meaning and scientific names are unchanged.
 - [x] No package manifest or configured lint/build/test runner was found. The project is a Git repository; the focused static and browser checks above were used instead.
 
 ## Not completed / owner action
