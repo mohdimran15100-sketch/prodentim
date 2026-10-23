@@ -23,12 +23,14 @@
 - [x] Confirmed all nine HTML documents declare UTF-8 as the first element inside `<head>`. Eight retain a valid UTF-8 BOM; the audit reports those as informational only.
 - [x] Confirmed the live Vercel homepage response uses `Content-Type: text/html; charset=utf-8`; the local deployment configuration does not override response headers.
 - [x] Reviewed valid Unicode punctuation restored in the research headings/captions and product artwork captions; intended meaning and scientific names are unchanged.
+- [x] Added an explicit Vercel host-conditional permanent redirect from `priodentim.com/*` to the matching `www.priodentim.com/*` canonical URL and pointed legacy page aliases directly to clean `www` URLs.
 - [x] No package manifest or configured lint/build/test runner was found. The project is a Git repository; the focused static and browser checks above were used instead.
 
 ## Not completed / owner action
 
 - [ ] Deploy the local changes through the approved Vercel release process. No post-change production deployment or crawl was performed.
-- [ ] Recheck all production canonical and legacy redirects, status codes, internal links, affiliate destination, sitemap fetch, and robots fetch after deployment.
+- [ ] After deploying, verify apex requests return HTTP 308 directly to the equivalent `www` URL; recheck all canonical and legacy redirects, status codes, internal links, affiliate destination, sitemap fetch, and robots fetch.
+- [ ] In Search Console URL Inspection, inspect the exact reported URL and its canonical target. Request indexing for the canonical URL only after Google reports the correct selected canonical and the updated permanent redirect is live.
 - [ ] Run Google Rich Results Test and Schema.org Validator against production-rendered URLs.
 - [ ] Run Lighthouse or Web Vitals field/lab measurement on production; the local spot-check does not establish CWV performance.
 - [ ] Complete keyboard/screen-reader accessibility checks and test the full page set at desktop and mobile sizes.

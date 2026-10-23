@@ -33,6 +33,7 @@ No Search Console account, keyword research subscription, query report, ranking 
 ## Technical observations
 
 - Vercel configuration has `cleanUrls: true` and legacy-path redirects. Current canonicals and sitemap entries use `https://www.priodentim.com/` with clean page paths.
+- The apex homepage and `/prodentim` currently respond with temporary HTTP 307 redirects to the canonical `www` host. This follow-up adds a Vercel host-conditional permanent redirect for apex requests. The production response remains 307 until a deployment applies the new configuration; confirm it becomes a single-hop HTTP 308 afterward.
 - `robots.txt` allows crawling and references the sitemap on the preferred host. No blocking directive was warranted.
 - The two existing ClickBank affiliate URLs both returned HTTP 307 and a `Location` header to `https://prodentim.com/text.php` with the same affiliate `hop` identifier. Links remain tagged `rel="nofollow sponsored noopener"`; checkout contents and terms still require seller-side verification.
 - Important content is in static HTML. No client-side rendering dependency was found for the main page content.
@@ -57,3 +58,4 @@ No Search Console account, keyword research subscription, query report, ranking 
 - The last production-page fetch occurred before this follow-up implementation. No deployment or post-change production crawl was performed.
 - A local homepage reload recorded no console or page errors. The mobile menu was spot-checked with pointer/keyboard interaction and its expanded state/close-on-link behavior. These are focused checks, not a full accessibility audit. No formal HTML conformance service, Schema.org validator, Lighthouse run, or production HTTP crawl was performed.
 - The live homepage response was observed with `Content-Type: text/html; charset=utf-8`; `vercel.json` does not define custom response headers.
+- Search Console's “Alternative page with proper canonical tag” status is an exclusion for a duplicate URL, not a guarantee that the selected canonical is indexed. URL Inspection must confirm Google's selected canonical and indexing state for the exact affected URL. Request indexing only for the canonical URL after the permanent host redirect is deployed.

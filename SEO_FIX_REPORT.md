@@ -26,6 +26,7 @@
 - Updated this report set to distinguish completed local checks from follow-up checks and owner-side verification.
 - Fixed confirmed text mojibake in research captions/headings and package-artwork separators; preserved intended em dashes, an arrow, and middle dots.
 - Added a recursive UTF-8/mojibake audit script at `scripts/audit-encoding.ps1`. It validates strict UTF-8 bytes, HTML charset placement, common mojibake/replacement characters, and possible double-escaped numeric entities without rewriting source.
+- Investigated the Search Console “Alternative page with proper canonical tag” report: live `www` pages return 200 with matching self-canonicals, while the apex host currently redirects temporarily (307). Added a Vercel host-conditional permanent redirect to the preferred `www` host and made legacy page aliases point directly to their clean canonical URLs. The production host redirect must be rechecked after Vercel deploys the configuration.
 
 ## Exact files changed
 
