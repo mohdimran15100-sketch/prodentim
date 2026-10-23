@@ -10,6 +10,7 @@
 - [x] Checked all nine local HTML pages for exactly one title, meta description, canonical URL, and H1.
 - [x] Confirmed canonical URLs use `https://www.priodentim.com/` and clean paths.
 - [x] Parsed all five embedded JSON-LD blocks successfully.
+- [x] Removed homepage Product markup lacking verified Offer/review/rating data; homepage structured data now uses WebSite, WebPage, and Organization without an incomplete Product entity.
 - [x] Parsed `sitemap.xml`; confirmed it contains nine URLs, all on the preferred host.
 - [x] Confirmed `robots.txt` allows crawling and points to `https://www.priodentim.com/sitemap.xml`.
 - [x] Checked local IDs for duplicates and local page/image references, resolving Vercel extensionless routes to their `.html` source pages for the check.
@@ -36,6 +37,7 @@
 - [ ] Inspect Vercel Project Settings → Domains: the current apex-to-`www` HTTP 307 appears to be applied before the project redirect rule. Configure a permanent redirect if available, then verify apex requests return HTTP 308 to the matching `www` path. The project cannot change an overriding Vercel domain-level redirect.
 - [ ] In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact reported URL was not available; request indexing only for the canonical URL if inspection shows that is appropriate.
 - [ ] Run Google Rich Results Test and Schema.org Validator against production-rendered URLs.
+- [ ] After the updated homepage is deployed and recrawled, validate it in Search Console's Product snippets report and request validation if the issue remains. Use URL Inspection separately to diagnose indexing; structured-data rich-result warnings do not, by themselves, prevent indexing.
 - [ ] Run Lighthouse or Web Vitals field/lab measurement on production; the local spot-check does not establish CWV performance.
 - [ ] Complete keyboard/screen-reader accessibility checks and test the full page set at desktop and mobile sizes.
 - [ ] Obtain current package labels and written seller documentation for formula/strains, warnings, manufacturing/certification, price, shipping, billing, package contents, bonuses, and all refund conditions.

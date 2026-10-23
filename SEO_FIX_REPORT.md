@@ -8,7 +8,7 @@
 
 - Standardized canonical, Open Graph, Twitter image, and structured-data URLs on the observed preferred `www` host and Vercel clean routes.
 - Updated `robots.txt` and rebuilt the sitemap using those same canonical routes.
-- Repaired homepage document/JSON-LD markup; removed unverified Product Offer price/availability. Retained only a Product entity with basic information.
+- Repaired homepage document/JSON-LD markup and removed unverified Product Offer price/availability. Later removed the remaining Product entity because it had no verified Offer, Review, or AggregateRating and triggered a Google Product rich-result issue. No price or rating was fabricated; visible product information remains on the page. This rich-result eligibility issue is separate from whether Google indexes the page.
 - Removed unsupported testimonial portraits, star ratings, and customer quotations. Replaced them with an editorial evidence/verification note.
 - Added a visible affiliate/editorial disclosure and publisher/credential transparency to primary editorial pages.
 - Qualified product descriptions and directions as seller statements; identified supplied ingredient/package imagery as promotional artwork rather than a verified label.
