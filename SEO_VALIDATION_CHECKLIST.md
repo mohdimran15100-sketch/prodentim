@@ -42,6 +42,7 @@
 - [ ] Confirm the active Vercel deployment corresponds to the pushed `main` commit. No manual deployment was performed.
 - [ ] Inspect Vercel Project Settings → Domains: the current apex-to-`www` HTTP 307 appears to be applied before the project redirect rule. Configure a permanent redirect if available, then verify apex requests return HTTP 308 to the matching `www` path. The project cannot change an overriding Vercel domain-level redirect.
 - [ ] In Search Console URL Inspection, inspect the exact reported URL and Google's selected canonical. The exact reported URL was not available; request indexing only for the canonical URL if inspection shows that is appropriate.
+- [ ] In Search Console, run **Test live URL** and compare the exact affected URL's live and indexed versions. If the indexed Product snippets report still shows the old missing-offer/review issue, confirm its example URLs no longer emit Product markup, then use **Validate fix**. This enhancement warning is independent of URL indexing; Search Console access is required.
 - [ ] Run Google Rich Results Test and Schema.org Validator against production-rendered URLs.
 - [ ] After the updated homepage is deployed and recrawled, validate it in Search Console's Product snippets report and request validation if the issue remains. Use URL Inspection separately to diagnose indexing; structured-data rich-result warnings do not, by themselves, prevent indexing.
 - [ ] Run Lighthouse or Web Vitals field/lab measurement on production; the local spot-check does not establish CWV performance.
@@ -51,5 +52,7 @@
 - [ ] Verify each linked research paper and its in-page summary against the actual publication.
 - [ ] Use Search Console or another first-party query source to measure candidate keyword demand and performance; no search-volume figures were available in this audit.
 - [x] After push, verified the IndexNow key file is served at the canonical `www` root and submitted nine updated canonical URLs with `scripts/submit-indexnow.ps1`; the global endpoint returned HTTP 200 (receipt only, not an indexing guarantee).
+- [x] Production follow-up: homepage, product guide, official-site guide, review page, and pricing page returned HTTP 200 with matching self-canonicals and `index, follow`; all five live JSON-LD blocks parsed and emitted no `Product`, `Offer`, `Review`, or `AggregateRating` entities.
+- [x] Production follow-up: all nine sitemap URLs returned HTTP 200; robots.txt allows crawling and references the canonical sitemap.
 - [ ] Submit or refresh the XML sitemap in Google Search Console and Bing Webmaster Tools. Google indexing requests require an authenticated Search Console user; no ranking, indexing date, or outcome can be guaranteed.
 - [ ] Review actual Google and Bing impressions/queries after data collection; no live search-result snapshot or verified competitor ranking data was available for this work.
